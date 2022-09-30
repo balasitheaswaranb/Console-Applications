@@ -312,8 +312,8 @@ public class Receptionist {
 			System.out.println("-------------------------");
 			for (Food food : luxuryDoubleRooms[roomNumber].getFood()) {
 				amount += food.getCost();
-				String format = "%-10s%-10s%-10s%n";
-				System.out.printf(format, list[food.getChosenFoodNo() - 1], food.getQuantity(), food.getCost());
+				System.out.println(
+						list[food.getChosenFoodNo() - 1] + "   " + food.getQuantity() + "   " + food.getCost());
 			}
 
 			break;
@@ -326,8 +326,8 @@ public class Receptionist {
 			System.out.println("-------------------------");
 			for (Food food : deluxeDoubleRooms[roomNumber].getFood()) {
 				amount += food.getCost();
-				String format = "%-10s%-10s%-10s%n";
-				System.out.printf(format, list[food.getChosenFoodNo() - 1], food.getQuantity(), food.getCost());
+				System.out
+						.println(list[food.getChosenFoodNo() - 1] + "  " + food.getQuantity() + "  " + food.getCost());
 			}
 			break;
 		case 3:
@@ -352,8 +352,8 @@ public class Receptionist {
 			System.out.println("-------------------------");
 			for (Food food : deluxeSingleRooms[roomNumber].getFood()) {
 				amount += food.getCost();
-				String format = "%-10s%-10s%-10s%n";
-				System.out.printf(format, list[food.getChosenFoodNo() - 1], food.getQuantity(), food.getCost());
+				System.out
+						.println(list[food.getChosenFoodNo() - 1] + "  " + food.getQuantity() + "   " + food.getCost());
 			}
 			break;
 		default:

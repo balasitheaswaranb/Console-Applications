@@ -18,25 +18,28 @@ public class ShowMenu {
 			char wantToContinue;
 			do {
 
-				System.out.println(
-						"\nEnter Your Choice :\n1.Show Room Details\n2.Show Room Availability \n3.Book Room\n4.Order Food\n5.Checkout Now\n6.Quit\n");
+				System.out.println("\nEnter Your Choice :\n1.Show Room Details\n"
+						+ "2.Show Room Availability \n3.Book Room\n4.Order Food\n5.Checkout Now\n6.Quit\n");
 				option = scanner.nextInt();
 				switch (option) {
 				case 1:
 					System.out.println(
-							"\nChoose Room Type :\n1.Luxury Double Bedroom \n2.Deluxe Double Bedroom \n3.Luxury Single Bedroom \n4.Deluxe Single Bedroom \n");
+							"\nChoose Room Type :\n1.Luxury Double Bedroom \n2.Deluxe Double Bedroom"
+							+ " \n3.Luxury Single Bedroom \n4.Deluxe Single Bedroom \n");
 					roomType = scanner.nextInt();
 					receptionist.roomFeatures(roomType);
 					break;
 				case 2:
 					System.out.println(
-							"\nChoose Room Type :\n1.Luxury Double Bedroom\n2.Deluxe Double Bedroom\n3.Luxury Single Bedroom\n4.Deluxe Single Bedroom\n");
+							"\nChoose Room Type :\n1.Luxury Double Bedroom\n2.Deluxe Double Bedroom\n3."
+							+ "Luxury Single Bedroom\n4.Deluxe Single Bedroom\n");
 					roomType = scanner.nextInt();
 					receptionist.roomAvailability(roomType);
 					break;
 				case 3:
 					System.out.println(
-							"\nChoose Room Type :\n1.Luxury Double Bedroom\n2.Deluxe Double Bedroom\n3.Luxury Single Bedroom\n4.Deluxe Single Bedroom\n");
+							"\nChoose Room Type :\n1.Luxury Double Bedroom\n2.Deluxe Double Bedroom\n3"
+							+ ".Luxury Single Bedroom\n4.Deluxe Single Bedroom\n");
 					roomType = scanner.nextInt();
 					receptionist.bookRoom(roomType);
 					break;
